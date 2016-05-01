@@ -1,11 +1,19 @@
 var portNumber = process.env.NODE_101_PORT;
-var http = require('http');
+var express = require('express');
+var app = express();
 
-var server = http.createServer(function(req, res) {
-  res.write("Hello there");
-  res.end();
+app.get('/', (req, res) => {
+  res.send('<h1>Home</h1>');
+})
+
+app.get('/hello', (req, res) => {
+  res.send('Hello World');
 });
 
-server.listen(portNumber);
+app.post('/hello', (req, res) => {
+  res.json({ message: 'Hello World '});
+});
+
+app.listen(portNumber);
 
 console.log('Server listening on port ', portNumber);
