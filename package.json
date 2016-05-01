@@ -1,0 +1,19 @@
+{
+  "name": "node101_isma",
+  "version": "1.0.0",
+  "description": "## Run",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ocalvet/node101.git"
+  },
+  "author": "Ovidio R. Calvet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ocalvet/node101/issues"
+  },
+  "homepage": "https://github.com/ocalvet/node101#readme"
+}
